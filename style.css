@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, sans-serif;
+    background: linear-gradient(135deg, #ff4d6d, #ff8ab3);
+    overflow:hidden;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    font-weight:bold;
+    margin:0;
+}
+
+p{
+    font-size:25px;
+    margin:10px 0;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background: #ffe6f0;
+}
+
+#love{
+    margin-top:20px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+
+.heart{
+    position: absolute;
+    font-size: 25px;
+    animation: floatUp 3s linear forwards;
+}
+
+@keyframes floatUp{
+    0% {opacity:1; transform: translateY(0) scale(1);}
+    100% {opacity:0; transform: translateY(-300px) scale(2);}
+}
